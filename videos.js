@@ -40,11 +40,11 @@ async function selectVideos() {
     });
   }
 
-  async function crearVideo(id, nombre) {
+  async function crearVideo(id, titulo, autor, fecha) {
     return new Promise((resolve, reject) => {
         const conexion= conectar();
   
-      conexion.run('INSERT INTO videos (ID, Titulo, Autor, Fecha ) VALUES (?, ?)', [id, nombre, autor, fecha], function(err) {
+      conexion.run('INSERT INTO videos (ID, Titulo, Autor, Fecha ) VALUES (?, ?)', [id, titulo, autor, fecha], function(err) {
         if (err) {
           reject(err);
         } else {

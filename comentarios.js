@@ -42,7 +42,7 @@ async function selectComentarios() {
     });
   }
 
-  async function crearComentario(id, nombre) {
+  async function crearComentario(id, UsuarioID, VideoID, Texto) {
     return new Promise((resolve, reject) => {
         const conexion= conectar();
   

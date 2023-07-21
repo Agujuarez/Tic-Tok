@@ -3,9 +3,9 @@ const { selectComentarios, crearTablaComentarios, crearComentario, comprobarCome
 async function test() {
     try {
       await crearTablaComentarios();
-      console.log('Tabla "Videos" creada exitosamente.');
+      console.log('Tabla "Comentarios" creada exitosamente.');
     } catch (err) {
-      console.error('Error al crear la tabla "Videos":', err);
+      console.error('Error al crear la tabla "Comentarios":', err);
       return null
     }
 
